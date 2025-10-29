@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RISE Behaviour Flow</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>RISE Behaviour Flow</h1>
+  <nav>
+    <button id="homeBtn">Home</button>
+    <button id="ctBtn">Classroom Teacher</button>
+    <button id="htBtn">Head Teacher</button>
+    <button id="dpBtn">Deputy Principal</button>
+  </nav>
+</header>
+<main>
+  <section id="homeSection" class="section active">
+    <h2>Welcome</h2>
+    <p>Select a role to begin navigating the behaviour flow.</p>
+  </section>
+  <section id="ctSection" class="section">
+    <h2>Classroom Teacher</h2>
+    <div class="card" data-target="ctMinor">Minor Behaviour</div>
+    <div class="card" data-target="ctModerate">Moderate Behaviour</div>
+    <div class="card" data-target="ctMajor">Major Behaviour</div>
+  </section>
+  <section id="htSection" class="section">
+    <h2>Head Teacher</h2>
+    <div class="card" data-target="htActions">Interventions</div>
+  </section>
+  <section id="dpSection" class="section">
+    <h2>Deputy Principal</h2>
+    <div class="card" data-target="dpActions">Actions</div>
+  </section>
+
+  <!-- Detailed sub-sections -->
+  <section id="ctMinor" class="section">
+    <h3>Classroom Teacher – Minor Behaviour</h3>
+    <p>Try strategies like seating change, positive reinforcement, reminder of expectations, etc.</p>
+  </section>
+  <section id="ctModerate" class="section">
+    <h3>Classroom Teacher – Moderate Behaviour</h3>
+    <p>Consider contacting parents, providing lunchtime detention, or logging behaviour.</p>
+  </section>
+  <section id="ctMajor" class="section">
+    <h3>Classroom Teacher – Major Behaviour</h3>
+    <p>Refer to Head Teacher for further intervention.</p>
+  </section>
+  <section id="htActions" class="section">
+    <h3>Head Teacher – Interventions</h3>
+    <p>Review student behaviour log, meet with student/parents, implement behaviour support plan.</p>
+  </section>
+  <section id="dpActions" class="section">
+    <h3>Deputy Principal – Actions</h3>
+    <p>Consider suspension, counselling referral, or escalation according to policy.</p>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Cronulla High School</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
